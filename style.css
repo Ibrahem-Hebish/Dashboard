@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: rgb(34, 31, 31);
+    display: flex;
+}
+.menu{
+    width: 70px;
+    height: 100vh;
+    background-color: rgb(21, 21, 35);
+    padding: 5px;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width: 370px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+.profile{display: flex;align-items: center;
+    gap: 25px; margin: 10px;}
+.img-box{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+img{
+   width: 100%;
+   border-radius: 50%;
+   border: white solid 3px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border: black 1px solid;
+    border-radius: 4px;
+    background-color: rgb(103, 103, 200);
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    
+}
+a:hover,.box:hover,.header:hover,.pro:hover,th:hover,td:hover,.profile:hover{
+    background-color: gray;
+}
+.Logout{
+position: absolute;
+bottom: 5px;
+width: 100%;
+}
+.Logout a h2{color: red;}
+.fas{font-size: 25px;}
+.fa-sign-out{color: red;size: 2rem;}
+.content{width: 100%; }
+.header{
+    height: 40px;
+    background-color: rgb(103, 103, 200);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.box{
+    width: 150px;
+    height: 200px;
+    flex-grow: 1;
+    background-color: rgb(21, 21, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box i,.box h2{
+font-size: 2rem;
+}
+.pro{
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgb(103, 103, 200);
+}
+table{width:100%;text-align: center;border-spacing: 8px;}
+th{background-color:rgb(103, 103, 200) ;border-radius: 10px; margin: 10px;height: 40px;}
+td{background-color:rgb(21, 21, 35) ;border-radius: 10px; margin: 10px;height: 40px;}
+@media screen and (max-width:600px){
+    ul li a{gap: 25px;}
+    .menu{width: 80px;}
+}
+@media screen and (max-width:800px){
+    ul li a{gap: 25px;}
+    .menu{width: 75px;}
+}
